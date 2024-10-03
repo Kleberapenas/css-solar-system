@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/estrelas.jpg);
+    background-repeat: repeat;
+}
+
+footer {
+    display: flex;
+    size: 5em;
+}
+
+ul {
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+    background-color: #005577;
+    border-radius: 10px;
+    height: 30px;
+    width: 60px;
+    color: rgb(255, 208, 97)
+}
+
+.grid {
+    padding: none;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    height: 1150px;
+    border: 1px dashed #ffffff;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    background-color: #b22200;
+}
+
+.blocos {
+
+}
+
+#info {
+
+}
+
+.solar-system {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: 100px;
+    border: 1px dashed red;
+}
+
+.sun {
+    position: absolute;
+    background-color: #ffcc00; /* Cor do Sol */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.8); /* Efeito de brilho */
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border: 1px dashed #005577;/* Linhas de órbita */
+}
+
+.mercury-orbit {
+    animation: orbit 10s linear infinite;
+    width: 240px;
+    height: 240px;
+}
+
+.venus-orbit {
+    animation: orbit 12s linear infinite;
+    width: 320px;
+    height: 320px;
+}
+
+.earth-orbit {
+    animation: orbit 14s linear infinite;
+    width: 360px;
+    height: 360px;
+}
+
+.mars-orbit {
+    animation: orbit 16s linear infinite;
+    width: 400px;
+    height: 400px;
+}
+
+.jupiter-orbit {
+    animation: orbit 20s linear infinite;
+    width: 600px;
+    height: 600px;
+}
+
+.saturn-orbit {
+    animation: orbit 22s linear infinite;
+    width: 700px;
+    height: 700px;
+}
+
+.uranus-orbit {
+    animation: orbit 24s linear infinite;
+    width: 800px;
+    height: 800px;
+}
+
+.neptune-orbit {
+    animation: orbit 26s linear infinite;
+    width: 900px;
+    height: 900px;
+}
+
+.planet {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Efeito de brilho nos planetas */
+}
+
+.mercury {
+    background: radial-gradient(circle, #6d6d6d 0%, #4e4e4e 70%); /* Gradiente para Mercúrio */
+    width: 20px;
+    height: 20px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.venus {
+    background: radial-gradient(circle, #ffcc66 0%, #cc9933 70%); /* Gradiente para Vênus */
+    width: 30px;
+    height: 30px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.earth {
+    background: radial-gradient(circle, #3399ff 0%, #005577 70%); /* Gradiente para Terra */
+    width: 35px;
+    height: 35px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mars {
+    background: radial-gradient(circle, #ff3300 0%, #b22200 70%); /* Gradiente para Marte */
+    width: 25px;
+    height: 25px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jupiter {
+    background: radial-gradient(circle, #d1a25a 0%, #a77f2e 70%); /* Gradiente para Júpiter */
+    width: 70px;
+    height: 70px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.saturn {
+    background: radial-gradient(circle, #e6c97b 0%, #c2a052 70%); /* Gradiente para Saturno */
+    width: 60px;
+    height: 60px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.uranus {
+    background: radial-gradient(circle, #8ac6e9 0%, #007f99 70%); /* Gradiente para Urano */
+    width: 50px;
+    height: 50px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.neptune {
+    background: radial-gradient(circle, #4a90e2 0%, #2a658e 70%); /* Gradiente para Netuno */
+    width: 45px;
+    height: 45px;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes tesla-orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(500px) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(500px) rotate(360deg);
+    }
+}
