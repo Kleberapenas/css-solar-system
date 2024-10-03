@@ -9,10 +9,21 @@ header {
     direction: row;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
+    color: rgb(0, 0, 0)
+}
+
 body {
     background-image: url(images/estrelas.jpg);
     background-repeat: repeat;
     overscroll-behavior: contain;
+    overflow: hidden;
 }
 
 footer {
@@ -26,17 +37,28 @@ ul {
     list-style: none;
     justify-content: space-evenly;
     flex-grow: 3;
+    align-items: center;
 }
 
 li {
     margin: 5px;
-    padding: 5px;
+    padding: 15px 25px 15px 25px;
     background-color: #005577;
     border-radius: 10px;
-    height: 30px;
-    width: 60px;
-    color: rgb(255, 208, 97)
+    height: 50px;
+    width: 100px;
+
 }
+
+li:nth-child(1) {background-color: #e1ef1dee;}
+li:nth-child(2) {background-color: darkblue;}
+li:nth-child(3) {background-color: lightskyblue;}
+li:nth-child(4) {background-color: lightsteelblue;}
+li:nth-child(5) {background-color: darkgoldenrod;}
+li:nth-child(6) {background-color: darkorange;}
+li:nth-child(7) {background-color: rgba(220, 38, 38, 0.685);}
+li:nth-child(8) {background-color: goldenrod;}
+li:nth-child(9) {background-color: #6d6d6d;}
 
 .grid {
     padding: none;
@@ -66,7 +88,7 @@ li {
     width: 600px;
     height: 600px;
     margin: 100px;
-    border: 1px dashed red;
+    border: 0px;
 }
 
 .sun {
