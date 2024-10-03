@@ -4,9 +4,15 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    direction: row;
+}
+
 body {
     background-image: url(images/estrelas.jpg);
     background-repeat: repeat;
+    overscroll-behavior: contain;
 }
 
 footer {
@@ -17,8 +23,9 @@ footer {
 ul {
     display: flex;
     direction: row;
-    justify-content: space-evenly;
     list-style: none;
+    justify-content: space-evenly;
+    flex-grow: 3;
 }
 
 li {
@@ -34,6 +41,8 @@ li {
 .grid {
     padding: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -48,18 +57,14 @@ li {
     background-color: #b22200;
 }
 
-.blocos {
-
-}
-
 #info {
 
 }
 
 .solar-system {
     position: relative;
-    width: 800px;
-    height: 800px;
+    width: 600px;
+    height: 600px;
     margin: 100px;
     border: 1px dashed red;
 }
