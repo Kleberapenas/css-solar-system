@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
 header {
     display: flex;
     direction: row;
 }
 
 button {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: transparent;
     border: none;
     text-align: inherit;
@@ -17,6 +28,10 @@ button {
     border-radius: 0;
     appearance: none;
     color: rgb(0, 0, 0)
+}
+
+button:hover {
+    font-size: 25px;
 }
 
 body {
@@ -41,8 +56,10 @@ ul {
 }
 
 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5px;
-    padding: 15px 25px 15px 25px;
     background-color: #005577;
     border-radius: 10px;
     height: 50px;
@@ -50,15 +67,16 @@ li {
 
 }
 
-li:nth-child(1) {background-color: #e1ef1dee;}
-li:nth-child(2) {background-color: darkblue;}
-li:nth-child(3) {background-color: lightskyblue;}
-li:nth-child(4) {background-color: lightsteelblue;}
-li:nth-child(5) {background-color: darkgoldenrod;}
-li:nth-child(6) {background-color: darkorange;}
-li:nth-child(7) {background-color: rgba(220, 38, 38, 0.685);}
-li:nth-child(8) {background-color: goldenrod;}
-li:nth-child(9) {background-color: #6d6d6d;}
+li:nth-child(1) {background-color: #d3da73ee;}
+li:nth-child(2) {background: radial-gradient(rgba(67, 36, 246, 0.648), rgba(252, 190, 74, 0.58) );}
+li:nth-child(3) {background-color: rgba(255, 128, 17, 0.642);}
+li:nth-child(4) {background: radial-gradient(rgba(6, 204, 6, 0.658), rgb(29, 73, 215));}
+li:nth-child(5) {background-color: rgba(255, 85, 0, 0.603);}
+li:nth-child(6) {background: linear-gradient(rgba(209, 158, 106, 0.66), rgba(123, 123, 160, 0.678), rgba(209, 158, 106, 0.66));}
+li:nth-child(7) {background-color: rgba(214, 178, 85, 0.653);}
+li:nth-child(8) {background-color: rgba(21, 184, 229, 0.676);}
+li:nth-child(9) {background-color: rgba(50, 87, 175, 0.765);}
+li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .grid {
     padding: none;
@@ -79,14 +97,10 @@ li:nth-child(9) {background-color: #6d6d6d;}
     background-color: #b22200;
 }
 
-#info {
-
-}
-
 .solar-system {
     position: relative;
     width: 600px;
-    height: 600px;
+    height: 450px;
     margin: 100px;
     border: 0px;
 }
@@ -235,6 +249,27 @@ li:nth-child(9) {background-color: #6d6d6d;}
     left: 100%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#star_wars {
+    height: 20px;
+    width: 20px;
+    z-index: 1001;
+    color: red;
+    translate: transform(-100px,-100px);
+    position: relative;
+    animation-duration: 6s;
+    animation-name: star_wars_a;
+    animation-delay: 10s;
+}
+
+@keyframes star_wars_a{
+    from {
+        translate: transform();
+    }
+    to {
+
+    }
 }
 
 @keyframes orbit {
