@@ -39,7 +39,6 @@ li {
 .container {
     margin: 0 auto;
     display: grid;
-    height: 1150px;
     border: 1px dashed #ffffff;
 }
 
