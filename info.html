@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,116 +8,81 @@
     <link rel="shortcut icon" href="images/Artua-Star-Wars-Clone-Trooper.ico" type="image/x-icon">
     <title>Bahia Wars Info</title>
 </head>
-<body>
-    <header style="background-color: white; position: fixed; z-index: 1000; width: 100%; height: 60px;">
-        <img style="height: 50px; width: 50px; transform: translateY(5px);" src="images/Artua-Star-Wars-Clone-Trooper.ico" alt="">
-            <ul>
-                <li><button>Introdução</button></li>
-                <li><button>Sol</button></li>
-                <li><button>Mercúrio</button></li>
-                <li><button>Vênus</button></li>
-                <li><button>Terra</button></li>
-                <li><button>Marte</button></li>
-                <li><button>Júpiter</button></li>
-                <li><button>Sarturno</button></li>
-                <li><button>Urano</button></li>
-                <li><button>Netuno</button></li>
-                
-            </ul>  
-    </header>
-    <section id="informacoes"></section>
-        <div class="inf-container">
-            <div id="placeholder">
-                <p> Passe o mouse sob um planeta para mais informações</p>
-            </div>
-            <div class="inf=introducao inf">
-                <div class="slide-introducao">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-introducao">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="inf=sol inf">
-                <div class="slide-sol">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-sol">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="inf=mercurio inf">
-                <div class="slide-mercurio">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-mercurio">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="inf-venus inf">
-                <div class="slide-venus">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-venus">
-                    <img src="">
-                </div>
-            </div>
-            <div class="inf-terra inf">
-                <div class="slide-terra">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-terra">
-                    <img src="">
-                </div>
-            </div>
-            <div class="inf-marte inf">
-                <div class="slide-marte">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-marte">
-                    <img src="">
-                </div>
-            </div>
-            <div class="inf-jupiter inf">
-                <div class="slide-jupter">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-jupiter">
-                    <img src="">
-                </div>
-            </div>
-            <div class="inf-saturno inf">
-                <div class="slide-saturno">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-saturno">
-                    <img src="">
-                </div>
-            </div>
-            <div class="inf-urano inf">
-                <div class="slide-urano">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-urano">
-                    <img src="">
-                </div>
-            </div>
-            <div class="inf-netuno inf">
-                <div class="slide-netuno">
-                    <img src="" alt="">
-                </div>
-                <div class="img" id="img-netuno">
-                    <img src="">
-                </div>
-            </div>
-        </div>
-    </section>
 
+<body>
+        <header style="background-color: white; position: fixed; z-index: 1000; width: 100%; height: 60px;">
+            <img style="height: 50px; width: 50px; transform: translateY(5px);" src="images/Artua-Star-Wars-Clone-Trooper.ico" alt="">
+            <ul>
+                <li><a href="#Introdução"></a><button id="Introdução">Introdução</button></li>
+                <li><a href="#Sol"></a><button id="btn-sol">Sol</button></li>
+                <li><a href="#Mercúrio"></a><button id="btn-mercurio">Mercúrio</button></li>
+                <li><a href="#Vênus"></a><button id="btn-venus">Vênus</button></li>
+                <li><a href="#Terra"></a><button id="btn-terra">Terra</button></li>
+                <li><a href="#Marte"></a><button id="btn-marte">Marte</button></li>
+                <li><a href="#Júpiter"></a><button id="btn-jupiter">Júpiter</button></li>
+                <li><a href="#Saturno"></a><button id="btn-saturno">Saturno</button></li>
+                <li><a href="#Urano"></a><button id="btn-urano">Urano</button></li>
+                <li><a href="#Netuno"></a><button id="btn-netuno">Netuno</button></li>
+            </ul>
+        </header>
+    
+        <div id="carouselExampleIndicators" class="carousel slide" style="margin-top: 60px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Introdução" id="Introdução"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Sol"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Mercúrio"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Vênus"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Terra"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Marte"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Júpiter"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Saturno"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Urano"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Netuno"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/slides/slide-introducao.jpeg" class="d-block w-100" alt="Introdução">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-sol.jpeg" class="d-block w-100" alt="Sol">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-mercurio.jpeg" class="d-block w-100" alt="Mercúrio">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-venus.jpeg" class="d-block w-100" alt="Vênus">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-terra.jpeg" class="d-block w-100" alt="Terra">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-marte.jpeg" class="d-block w-100" alt="Marte">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-jupiter.jpeg" class="d-block w-100" alt="Júpiter">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-saturno.jpeg" class="d-block w-100" alt="Saturno">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-urano.jpeg" class="d-block w-100" alt="Urano">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slides/slide-netuno.jpeg" class="d-block w-100" alt="Netuno">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
     <title>Exemplo de Música de Fundo</title>
-</head>
-<body>
-
+    
     <h1>Bem-vindo ao meu site!</h1>
     <p>Esta é uma demonstração de como adicionar música de fundo.</p>
 
@@ -127,4 +93,5 @@
 
 
 </body>
+
 </html>

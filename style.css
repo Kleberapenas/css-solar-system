@@ -106,6 +106,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .sun {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     background-color: #ffcc00; /* Cor do Sol */
     border-radius: 50%;
@@ -114,7 +117,7 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 30px rgba(255, 204, 0, 0.8); /* Efeito de brilho */
+    box-shadow: 0 0 30px rgba(255, 204, 0, 0.845); /* Efeito de brilho */
 }
 
 .orbit {
@@ -127,20 +130,20 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .mercury-orbit {
     animation: orbit 10s linear infinite;
-    width: 240px;
-    height: 240px;
+    width: 160px;
+    height: 160px;
 }
 
 .venus-orbit {
     animation: orbit 12s linear infinite;
-    width: 320px;
-    height: 320px;
+    width: 230px;
+    height: 230px;
 }
 
 .earth-orbit {
     animation: orbit 14s linear infinite;
-    width: 360px;
-    height: 360px;
+    width: 315px;
+    height: 315px;
 }
 
 .mars-orbit {
@@ -151,26 +154,26 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .jupiter-orbit {
     animation: orbit 20s linear infinite;
-    width: 600px;
-    height: 600px;
+    width: 510px;
+    height: 510px;
 }
 
 .saturn-orbit {
     animation: orbit 22s linear infinite;
-    width: 700px;
-    height: 700px;
+    width: 710px;
+    height: 710px;
 }
 
 .uranus-orbit {
     animation: orbit 24s linear infinite;
-    width: 800px;
-    height: 800px;
+    width: 900px;
+    height: 900px;
 }
 
 .neptune-orbit {
     animation: orbit 26s linear infinite;
-    width: 900px;
-    height: 900px;
+    width: 1015px;
+    height: 1015px;
 }
 
 .planet {
@@ -180,6 +183,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .mercury {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #6d6d6d 0%, #4e4e4e 70%); /* Gradiente para Mercúrio */
     width: 20px;
     height: 20px;
@@ -189,6 +195,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .venus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #ffcc66 0%, #cc9933 70%); /* Gradiente para Vênus */
     width: 30px;
     height: 30px;
@@ -198,6 +207,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .earth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #3399ff 0%, #005577 70%); /* Gradiente para Terra */
     width: 35px;
     height: 35px;
@@ -207,6 +219,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .mars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #ff3300 0%, #b22200 70%); /* Gradiente para Marte */
     width: 25px;
     height: 25px;
@@ -216,6 +231,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .jupiter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #d1a25a 0%, #a77f2e 70%); /* Gradiente para Júpiter */
     width: 70px;
     height: 70px;
@@ -225,6 +243,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .saturn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #e6c97b 0%, #c2a052 70%); /* Gradiente para Saturno */
     width: 60px;
     height: 60px;
@@ -234,6 +255,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .uranus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #8ac6e9 0%, #007f99 70%); /* Gradiente para Urano */
     width: 50px;
     height: 50px;
@@ -243,6 +267,9 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .neptune {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: radial-gradient(circle, #4a90e2 0%, #2a658e 70%); /* Gradiente para Netuno */
     width: 45px;
     height: 45px;
@@ -251,24 +278,29 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     transform: translate(-50%, -50%);
 }
 
-#star_wars {
-    height: 20px;
-    width: 20px;
-    z-index: 1001;
-    color: red;
-    translate: transform(-100px,-100px);
-    position: relative;
-    animation-duration: 6s;
-    animation-name: star_wars_a;
-    animation-delay: 10s;
+#doctor_who {
+    height: 50px;
+    width: 40px;
 }
 
-@keyframes star_wars_a{
+#doctor_who img{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    rotate:y 180deg ;
+    transform: translate(-1000px);
+    position: relative;
+    animation-duration: 1s;
+    animation-name: doctor_who_a;
+    animation-delay: 1s;
+}
+
+@keyframes doctor_who_a{
     from {
-        translate: transform();
+        transform: translate(1000px);
     }
     to {
-
+        transform: translate(-2000px);
     }
 }
 
@@ -288,4 +320,17 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     to {
         transform: translate(-50%, -50%) rotate(0deg) translateX(500px) rotate(360deg);
     }
+}
+
+.carousel-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.carousel-btn:hover {
+    background-color: #ccc;
 }
