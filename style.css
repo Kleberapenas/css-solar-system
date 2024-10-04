@@ -16,6 +16,7 @@ a:hover {
 header {
     display: flex;
     direction: row;
+    flex-wrap: nowrap;
 }
 
 button {
@@ -51,6 +52,7 @@ ul {
     direction: row;
     list-style: none;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     flex-grow: 3;
     align-items: center;
 }
@@ -64,11 +66,10 @@ li {
     border-radius: 10px;
     height: 50px;
     width: 100px;
-
 }
 
-li:nth-child(1) {background-color: #d3da73ee;}
-li:nth-child(2) {background: radial-gradient(rgba(67, 36, 246, 0.648), rgba(252, 190, 74, 0.58) );}
+li:nth-child(1) {background-color: #eccb24;}
+li:nth-child(2) {background: radial-gradient(rgba(75, 49, 219, 0.694), rgba(252, 190, 74, 0.58) );}
 li:nth-child(3) {background-color: rgba(255, 128, 17, 0.642);}
 li:nth-child(4) {background: radial-gradient(rgba(6, 204, 6, 0.658), rgb(29, 73, 215));}
 li:nth-child(5) {background-color: rgba(255, 85, 0, 0.603);}
@@ -100,7 +101,7 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 .solar-system {
     position: relative;
     width: 600px;
-    height: 450px;
+    height: 460px;
     margin: 100px;
     border: 0px;
 }
@@ -122,10 +123,11 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .orbit {
     position: absolute;
+    border-radius: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
-    border: 1px dashed #005577;/* Linhas de órbita */
+    border: 1px dashed #ad9898;/* Linhas de órbita */
 }
 
 .mercury-orbit {
@@ -288,11 +290,10 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     height: 100%;
     width: 100%;
     rotate:y 180deg ;
-    transform: translate(-1000px);
+    transform: translate(-1000px,500px);
     position: relative;
-    animation-duration: 1s;
-    animation-name: doctor_who_a;
-    animation-delay: 1s;
+    animation: doctor_who_a 1s infinite;
+    animation-delay: 1500s;
 }
 
 @keyframes doctor_who_a{
@@ -333,4 +334,25 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .carousel-btn:hover {
     background-color: #ccc;
+}
+
+.logo-star-wars:hover {
+    width: 200px; /* ajuste o tamanho conforme necessário */
+    animation: girar 2s linear infinite; /* 2s é a duração da rotação */
+}
+
+@keyframes girar {
+    0% {
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    50% {
+        scale: 2;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        scale: 1;
+        transform: rotate(360deg);
+    }
 }
