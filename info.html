@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -12,51 +12,40 @@
 </head>
 
 <body>
-  <header style="position: fixed; z-index: 1000; width: 100%; height: 60px;">
-    <img class="logo-star-wars" style="height: 50px; width: 50px; transform: translateY(5px);" src="images/Artua-Star-Wars-Clone-Trooper.ico" alt="">
-        <ul>
-            <li><button>Sol</button></li>
-            <li><button>Mercúrio</button></li>
-            <li><button>Vênus</button></li>
-            <li><button>Terra</button></li>
-            <li><button>Marte</button></li>
-            <li><button>Júpiter</button></li>
-            <li><button>Saturno</button></li>
-            <li><button>Urano</button></li>
-            <li><button>Netuno</button></li>
-            <li><button><a href="info.html">Info</a></button></li>
-        </ul>  
+  <header style="position: fixed; z-index: 1000; width: 100%; height: 50px;">
+    <a href="index.html"><img class="logo-star-wars" style="height: 50px; width: 50px; transform: translateY(5px);" src="images/Artua-Star-Wars-Clone-Trooper.ico" alt=""></a>
   </header> 
 
-    <div id="carouselExample" class="carousel slide">
+    <div style="transform: translateY(-35px);" id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div id="Introdução" class="carousel-item active">
-            <img style="height: 100%; width: 100%;" src="images/slides/slide-introducao.jpeg" class="d-block w-100" alt="...">
+            <img style="height: 100%; width: 100%;" src="images/slides/slide-introducao.jpeg" class="d-block w-100" alt="..." >
           </div>
-          <div id="Sol" class="carousel-item">
-            <img style="height: 100%; width: 90%;" src="images/slides/slide-sol.jpeg" class="d-block w-100" alt="...">
+          <div id="Sol" style="height: 90%; width: 90%;" class="carousel-item">
+            <img src="images/slides/slide-sol.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Mercúrio" class="carousel-item">
+          <div id="Mercúrio" style="height: 90%; width: 90%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-mercurio.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Vênus" class="carousel-item">
+          <div id="Vênus" style="height: 90%; width: 90%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-venus.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Terra" class="carousel-item">
+          <div id="Terra" style="height: 90%; width: 90%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-terra.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Marte" class="carousel-item">
-            <img style="height: 100%; width: 100%;" src="images/slides/slide-marte.jpeg" class="d-block w-100" alt="...">
-          </div><div id="Júpiter" class="carousel-item">
+          <div id="Marte" style="height: 85%; width: 85%;"  class="carousel-item">
+            <img src="images/slides/slide-marte.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div id="Júpiter" style="height: 85%; width: 85%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-jupiter.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Saturno" class="carousel-item">
+          <div id="Saturno" style="height: 90%; width: 90%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-saturno.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Urano" class="carousel-item">
+          <div id="Urano" style="height: 90%; width: 90%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-urano.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div id="Netuno" class="carousel-item">
+          <div id="Netuno" style="height: 90%; width: 90%;" class="carousel-item">
             <img style="height: 100%; width: 100%;" src="images/slides/slide-netuno.jpeg" class="d-block w-100" alt="...">
           </div>
         </div>
@@ -77,7 +66,7 @@
     <p>Esta é uma demonstração de como adicionar música de fundo.</p>
 
     <audio autoplay loop style="display:none;">
-        <source src="" type="audio/mpeg">
+        <source src="music/Música tema de suspense - Guerra nas Estrelas (John Williams - The Imperial March).mp3" type="audio/mpeg">
         Seu navegador não suporta a tag de áudio.
     </audio>
 

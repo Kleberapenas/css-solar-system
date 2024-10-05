@@ -37,7 +37,8 @@ button:hover {
 
 body {
     background-image: url(images/estrelas.jpg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
     overscroll-behavior: contain;
     overflow: hidden;
 }
@@ -66,6 +67,7 @@ li {
     border-radius: 10px;
     height: 50px;
     width: 100px;
+    border: 1px solid rgb(176, 173, 173);
 }
 
 li:nth-child(1) {background-color: #eccb24;}
@@ -131,43 +133,43 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .mercury-orbit {
-    animation: orbit 10s linear infinite;
+    animation: orbit 5s linear infinite;
     width: 160px;
     height: 160px;
 }
 
 .venus-orbit {
-    animation: orbit 12s linear infinite;
+    animation: orbit 7s linear infinite;
     width: 230px;
     height: 230px;
 }
 
 .earth-orbit {
-    animation: orbit 14s linear infinite;
+    animation: orbit 10s linear infinite;
     width: 315px;
     height: 315px;
 }
 
 .mars-orbit {
-    animation: orbit 16s linear infinite;
+    animation: orbit 12s linear infinite;
     width: 400px;
     height: 400px;
 }
 
 .jupiter-orbit {
-    animation: orbit 20s linear infinite;
+    animation: orbit 16s linear infinite;
     width: 510px;
     height: 510px;
 }
 
 .saturn-orbit {
-    animation: orbit 22s linear infinite;
+    animation: orbit 18s linear infinite;
     width: 710px;
     height: 710px;
 }
 
 .uranus-orbit {
-    animation: orbit 24s linear infinite;
+    animation: orbit 20s linear infinite;
     width: 900px;
     height: 900px;
 }
@@ -280,7 +282,17 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     transform: translate(-50%, -50%);
 }
 
+#fatos_sol {
+    animation: fato_sol;
+}
+
+#fatos_sol:hover {
+    content:"Sol?"
+}
+
 #doctor_who {
+    display: flex;
+    flex-direction: row;
     height: 50px;
     width: 40px;
 }
@@ -292,8 +304,8 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     rotate:y 180deg ;
     transform: translate(-1000px,500px);
     position: relative;
-    animation: doctor_who_a 1s infinite;
-    animation-delay: 1500s;
+    animation: doctor_who_a 12s infinite;
+    animation-delay: 1s;
 }
 
 @keyframes doctor_who_a{

@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+}
+
+.imagem-trigger {
+    width: 300px; /* Ajuste o tamanho conforme necessário */
+    cursor: pointer;
+}
+
+.zoom-image-container {
+    position: absolute;
+    top: 110;
+    left: 110;
+    width: 300px; /* Deve ser igual ao tamanho da imagem de trigger */
+    height: 300px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    display: none; /* Oculta a imagem de zoom por padrão */
+}
+
+.imagem-zoom {
+    width: 100%; /* Faz a imagem de zoom ocupar todo o espaço */
+    transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.container:hover .zoom-image-container {
+    display: block; /* Exibe a imagem de zoom ao passar o mouse */
+}
+
+.container:hover .imagem-zoom {
+    transform: scale(1.5); /* Aumenta a imagem de zoom quando o mouse está sobre a trigger */
+}
