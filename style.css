@@ -290,7 +290,30 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     content:"Sol?"
 }
 
+.tesla {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 90%;
+    top: 40%;
+    height: 50px;
+    width: 50px;
+}
+
+.tesla-orbit {
+    animation: tesla-orbit 7s linear infinite;
+    position: absolute;
+    width: 620px;
+    height: 620px;
+}
+
+.tesla-orbit img {
+    animation: tesla-position 7s linear infinite;
+    scale: 0.7;
+}
+
 #doctor_who {
+    position: absolute;
     display: flex;
     flex-direction: row;
     height: 50px;
@@ -328,11 +351,15 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 @keyframes tesla-orbit {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(500px) rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(500px) rotate(360deg);
+        transform: rotate(360deg);
     }
+}
+
+@keyframes tesla-position {
+
 }
 
 .carousel-btn {
