@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/*Classes de tags do html*/
+
 a {
     text-decoration: none;
     color: black;
@@ -37,10 +39,12 @@ button:hover {
 
 body {
     background-image: url(images/estrelas.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 200% 100%;
     overscroll-behavior: contain;
     overflow: hidden;
+    animation: moving_stars 30s linear infinite;
+
 }
 
 footer {
@@ -81,6 +85,14 @@ li:nth-child(8) {background-color: rgba(21, 184, 229, 0.676);}
 li:nth-child(9) {background-color: rgba(50, 87, 175, 0.765);}
 li:nth-child(10) {background-color: #bcbcbc9e;}
 
+@keyframes moving_stars {
+    to {
+        background-position: -200% 0;
+    }
+}
+
+/*Classes do CSS*/
+
 .grid {
     padding: none;
     display: flex;
@@ -100,6 +112,8 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     background-color: #b22200;
 }
 
+/*Sistema solar*/
+
 .solar-system {
     position: relative;
     width: 600px;
@@ -109,18 +123,20 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 }
 
 .sun {
+    background-image: url(images/planetas/Solarsystemscope_texture_8k_sun.jpg);
+    background-size: 150% 100%;
+    animation: sun_rotation 5s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color: #ffcc00; /* Cor do Sol */
     border-radius: 50%;
     width: 100px;
     height: 100px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 30px rgba(255, 204, 0, 0.845); /* Efeito de brilho */
+    box-shadow: 0 0 60px rgba(255, 204, 0, 0.945); /* Efeito de brilho */
 }
 
 .orbit {
@@ -282,12 +298,40 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     transform: translate(-50%, -50%);
 }
 
-#fatos_sol {
-    animation: fato_sol;
+@keyframes orbit {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
-#fatos_sol:hover {
-    content:"Sol?"
+@keyframes sun_rotation {
+    to {background-position: -300% 0;}
+}
+
+/*Outras Animações*/
+
+.logo-star-wars:hover {
+    width: 200px; /* ajuste o tamanho conforme necessário */
+    animation: girar 2s linear infinite; /* 2s é a duração da rotação */
+}
+
+@keyframes girar {
+    0% {
+        scale: 1;
+        transform: rotate(0deg);
+    }
+    50% {
+        scale: 2;
+        transform: rotate(180deg);
+    }
+
+    100% {
+        scale: 1;
+        transform: rotate(360deg);
+    }
 }
 
 .tesla {
@@ -312,43 +356,6 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     scale: 0.7;
 }
 
-#doctor_who {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    width: 40px;
-}
-
-#doctor_who img{
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    rotate:y 180deg ;
-    transform: translate(-1000px,500px);
-    position: relative;
-    animation: doctor_who_a 12s infinite;
-    animation-delay: 1s;
-}
-
-@keyframes doctor_who_a{
-    from {
-        transform: translate(1000px);
-    }
-    to {
-        transform: translate(-2000px);
-    }
-}
-
-@keyframes orbit {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-
 @keyframes tesla-orbit {
     from {
         transform: rotate(0deg);
@@ -362,6 +369,57 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 }
 
+#doctor_who {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 40px;
+}
+
+#doctor_who {
+    position:absolute;
+    top:100px;
+    animation: doctor_who_a 6s linear infinite;
+}
+
+#doctor_who img{
+    position: inherit;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    rotate:y 180deg ;
+    position: relative;
+    animation-delay: 1s;
+}
+
+.doctor_who_caption {
+    /*Text settings*/
+    text-align: center;
+    color: white;
+    font-style: bold;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*Animation setting*/
+    animation: doctor_who_exterminate 2s linear infinite
+}
+
+@keyframes doctor_who_a{
+    from {
+        left:-1000px;
+    }
+    to {
+        left:2000px;
+    }
+}
+
+@keyframes doctor_who_exterminate {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/*Info html*/
+
 .carousel-btn {
     background-color: #f0f0f0;
     border: none;
@@ -373,25 +431,4 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .carousel-btn:hover {
     background-color: #ccc;
-}
-
-.logo-star-wars:hover {
-    width: 200px; /* ajuste o tamanho conforme necessário */
-    animation: girar 2s linear infinite; /* 2s é a duração da rotação */
-}
-
-@keyframes girar {
-    0% {
-        scale: 1;
-        transform: rotate(0deg);
-    }
-    50% {
-        scale: 2;
-        transform: rotate(180deg);
-    }
-
-    100% {
-        scale: 1;
-        transform: rotate(360deg);
-    }
 }
