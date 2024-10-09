@@ -638,19 +638,18 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 .falcon img{
     position: absolute;
-    animation: 1s bye linear infinite;
+    animation: 10s bye linear infinite;
+    z-index: 1000;
 }
 
 @keyframes bye {
     from {
-        left: 100px;
-        top: 100px;
+        transform: translate(-1000px,0px);
         scale: 1;
     }
     to {
-        right: 200px;
-        bottom: 100px;
-        scale: 2;
+        transform: translate(500px,750px);
+        scale: 0;
     }
 }
 
