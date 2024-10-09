@@ -636,6 +636,24 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
 
 /*Outras Animações*/
 
+.falcon img{
+    position: absolute;
+    animation: 1s bye linear infinite;
+}
+
+@keyframes bye {
+    from {
+        left: 100px;
+        top: 100px;
+        scale: 1;
+    }
+    to {
+        right: 200px;
+        bottom: 100px;
+        scale: 2;
+    }
+}
+
 .logo-star-wars:hover {
     width: 200px; /* ajuste o tamanho conforme necessário */
     animation: girar 2s linear infinite; /* 2s é a duração da rotação */
