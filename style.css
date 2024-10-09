@@ -22,6 +22,7 @@ header {
 }
 
 button {
+    position: absolute;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: transparent;
@@ -31,10 +32,6 @@ button {
     border-radius: 0;
     appearance: none;
     color: rgb(0, 0, 0)
-}
-
-button:hover {
-    font-size: 25px;
 }
 
 body {
@@ -110,6 +107,332 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     display: flex;
     flex-direction: row;
     background-color: #b22200;
+}
+
+/*Header*/
+
+.fatos-sol .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-1.jpg);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fatos-sol p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fatos-sol:hover .button-facts {
+    visibility: visible;
+}
+
+.fatos-sol img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-merc .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-2.jfif);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-merc p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-merc:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-merc img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-ven .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-3.jpg);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-ven p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-ven:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-ven img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-terra .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-4.jpg);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-terra p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-terra:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-terra img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-mar .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-5.jfif);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-mar p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-mar:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-mar img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-jup .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-6.webp);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-jup p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-jup:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-jup img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-sat .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 320px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-7.jfif);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-sat p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-sat:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-sat img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-ur .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-8.jpg);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-ur p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-ur:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-ur img {
+    height: 200px;
+    width: 200px;
+}
+
+.fat-netu .button-facts {
+    visibility: hidden;
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 200px;
+    left: 0px;
+    border-radius: 10%;
+    padding: 3px;
+    border: 2px solid white;
+    background-image: url(images/fatos-background/fatos-background-9.jpg);
+    background-size: 100% 100%;
+    /*flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fat-netu p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 350px;
+    text-align: center;
+}
+
+.fat-netu:hover .button-facts {
+    visibility: visible;
+}
+
+.fat-netu img {
+    height: 200px;
+    width: 200px;
 }
 
 /*Sistema solar*/
