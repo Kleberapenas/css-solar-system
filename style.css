@@ -664,6 +664,7 @@ li:nth-child(10) {background-color: #bcbcbc9e;}
     }
 
     100% {
+        opacity: 1;
         scale: 10;
     }
 }
